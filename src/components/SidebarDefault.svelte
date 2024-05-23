@@ -7,7 +7,7 @@
     <span class=""> ///__________<sup>*</sup></span>
   </div>
 </div>
-<img src="/jukwaa.png" height="200px" alt="cover" />
+<img src="jukwaa.png" height="200px" alt="cover" />
 <div class="jukwaa-yellow-bg p-1 mt-1 text-dark bg-white">
   <strong>Post: </strong>
   {post.data.title}
