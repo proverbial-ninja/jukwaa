@@ -4,7 +4,7 @@ startDate: 2024-05-23
 description: 'Post launch tasks'
 author: 'Proverbial Ninja'
 project: jukwaa
-layout: 'Blog'
+layout_type: 'Blog'
 tags: ["astro", "blogging"]
 ---
 

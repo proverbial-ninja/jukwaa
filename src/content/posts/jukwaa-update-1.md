@@ -4,7 +4,7 @@ startDate: 2024-05-22
 description: 'Jukwaa Update 1'
 author: 'Proverbial Ninja'
 project: jukwaa
-layout: 'Micro'
+layout_type: 'Micro'
 tags: ["astro", "blogging"]
 ---
 

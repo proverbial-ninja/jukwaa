@@ -16,7 +16,7 @@ const postsCollection = defineCollection({
     title: z.string(),
     startDate: z.date(),
     description: z.string(),
-    layout: z.string(),
+    layout_type: z.string(),
     author: z.string().optional(),
     link: z.string().optional(),
     isthrowback: z.boolean().default(false).optional(),

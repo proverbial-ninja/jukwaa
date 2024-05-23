@@ -4,7 +4,7 @@ startDate: 2024-05-22
 description: 'Introducing this Blog & Blogging platform'
 author: 'Proverbial Ninja'
 project: jukwaa
-layout: 'Blog'
+layout_type: 'Blog'
 tags: ["astro", "blogging"]
 ---
 
