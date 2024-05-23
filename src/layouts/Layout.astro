@@ -114,7 +114,8 @@ const options: ISourceOptions = {
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </html>
-<style>
+
+<style is:global>
   @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
   canvas {
     height: 0px;
@@ -127,14 +128,12 @@ const options: ISourceOptions = {
     padding-top: 35px;
     text-align: justify;
   }
-</style>
-<style is:global>
   /* Unscoped, delivered as-is to the browser.
      Applies to all <h1> tags on your site. */
   canvas {
     color: red;
   }
-  <style global > .jukwaa-yellow-bg {
+  .jukwaa-yellow-bg {
     background-color: #fff;
   }
   .glowing-text {
