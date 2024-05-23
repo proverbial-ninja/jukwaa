@@ -54,7 +54,7 @@
           {#if posts.length > 1}
             {#if post.slug !== posts[0].slug}
               <a
-                href={`/?post=${posts[posts.indexOf(post) - 1].slug}`}
+                href={`?post=${posts[posts.indexOf(post) - 1].slug}`}
                 class="text-decoration-none text-white"
               >
                 <span class=" glowing-text">Next</span>
@@ -64,7 +64,7 @@
             {/if}
             {#if post.slug !== posts[posts.length - 1].slug}
               <a
-                href={`/?post=${posts[posts.indexOf(post) + 1].slug}`}
+                href={`?post=${posts[posts.indexOf(post) + 1].slug}`}
                 class="text-decoration-none me-3 text-white"
               >
                 <span class=" glowing-text">Previous</span>
