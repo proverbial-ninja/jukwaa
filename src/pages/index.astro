@@ -1,16 +1,74 @@
 ---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import Page from "../components/Page.svelte";
+import Particles from "astro-particles";
+import particle_options from "../particles.json";
+import type { ISourceOptions } from "tsparticles-engine";
 
+const configs: ISourceOptions = {
+  particles: {
+    number: {
+      value: 100,
+    },
+    color: {
+      value: "#ffffff",
+    },
+    links: {
+      enable: true,
+      distance: 200,
+    },
+    shape: {
+      type: "circle",
+    },
+    opacity: {
+      value: 1,
+    },
+    size: {
+      value: {
+        min: 4,
+        max: 6,
+      },
+    },
+    move: {
+      enable: true,
+    },
+  },
+  background: {
+    color: "#000000",
+  },
+  fullScreen: {
+    zIndex: -1,
+  },
+};
+
+const options: ISourceOptions = {
+  background: {
+    color: "#000",
+  },
+  fullScreen: {
+    zIndex: -1,
+  },
+  particles: {
+    number: {
+      value: 70,
+    },
+    move: {
+      enable: true,
+    },
+  },
+};
+const posts = await getCollection("posts");
+const projects = await getCollection("projects");
+
+const sortedPosts = posts.slice().sort((a, b) => {
+  const dateA = new Date(a.data.startDate);
+  const dateB = new Date(b.data.startDate);
+  return dateA < dateB ? 1 : -1;
+});
+const post = sortedPosts[0];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <Page client:only="svelte" posts={sortedPosts} {projects} />
+</Layout>
