@@ -42,7 +42,9 @@
           </div>
           <div>
             <span class=" glowing-text">
-              <a href="#project:jukwaa">-&gt; About</a>
+              <a class="text-decoration-none text-white" href="#project:jukwaa"
+                >-&gt; About</a
+              >
             </span>
           </div>
         </div>
