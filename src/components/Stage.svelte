@@ -6,7 +6,7 @@
   export let projects;
   let post_layout;
 
-  switch (post.data.layout) {
+  switch (post.data.layout_type) {
     case "Blog":
       post_layout = Blog;
       break;

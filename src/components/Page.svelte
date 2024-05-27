@@ -41,7 +41,9 @@
             >
           </div>
           <div>
-            <span class=" glowing-text">-&gt; About </span>
+            <span class=" glowing-text">
+              <a href="#project:jukwaa">-&gt; About</a>
+            </span>
           </div>
         </div>
         <div
