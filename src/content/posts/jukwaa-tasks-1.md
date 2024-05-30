@@ -1,7 +1,7 @@
 ---
 title: 'TODO List #1'
 startDate: 2024-05-23
-description: 'Post launch tasks'
+description: 'Jukwaa Post launch tasks'
 author: 'Proverbial Ninja'
 project: jukwaa
 layout_type: 'Blog'

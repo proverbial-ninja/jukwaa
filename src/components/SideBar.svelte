@@ -7,28 +7,38 @@
   import SidebarPosts from "./SidebarPosts.svelte";
   import SidebarProjects from "./SidebarProjects.svelte";
   import SidebarSingleProject from "./SidebarSingleProject.svelte";
-
-  let slug;
+  import { sidebar } from "../lib/store";
   let url;
 
-  const handleHashChange = (z) => {
-    url = location.hash.slice(1);
-    console.log("url");
-    console.log(url);
+  const removeUrl = () => {
+    if (!url) {
+      var _url = new URL(window.location.href);
+      _url.searchParams.delete("sidebar");
+      window.history.pushState({}, "", _url);
+    }
   };
-  window.addEventListener("hashchange", handleHashChange);
+  sidebar.subscribe((value) => {
+    console.log("storess");
+    url = value;
+    if (url) {
+      var _url = new URL(window.location.href);
+      _url.searchParams.set("sidebar", value);
+      window.history.pushState({}, "", _url);
+    } else {
+      // removeUrl();
+    }
+    console.log(value);
+  });
+
+  let slug;
 
   onMount(() => {
-    console.log("posts");
-
-    handleHashChange();
-  });
-  onDestroy(() => {
-    window.removeEventListener("hashchange", handleHashChange);
+    url = new URL(window.location).searchParams.get("sidebar");
+    sidebar.set(url);
   });
 </script>
 
-<div style="max-width: 380px;" class="col col-3 d-inline-block me-4">
+<div style="max-width: 350px;" class="col col-3 d-inline-block me-4">
   {#if !url}
     <SidebarDefault {post} />
     <!-- content here -->

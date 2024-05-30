@@ -1,4 +1,5 @@
 <script>
+  import { fade } from "astro:transitions";
   import { onMount } from "svelte";
   import { onDestroy } from "svelte";
   import SideBar from "./SideBar.svelte";
@@ -6,6 +7,7 @@
   import ImageComponent from "./MarkdownImage.svelte";
   import Stage from "./Stage.svelte";
   export let posts;
+  import { sidebar } from "../lib/store";
   let post;
   let project;
   export let projects;
@@ -31,7 +33,7 @@
   <!-- content here -->
 
   <div class="container-fluid">
-    <div class="row p-5" style="height: 87vh; ">
+    <div class="row p-4" style="height: 87vh; ">
       <div class="col col-9 d-inline-block">
         <div class="py-3 d-flex justify-content-between w-100">
           <div>
@@ -42,8 +44,9 @@
           </div>
           <div>
             <span class=" glowing-text">
-              <a class="text-decoration-none text-white" href="#project:jukwaa"
-                >-&gt; About</a
+              <a
+                class="text-decoration-none text-white"
+                on:click={() => sidebar.set("project:jukwaa")}>-&gt; About</a
               >
             </span>
           </div>

@@ -1,4 +1,5 @@
 <script>
+  import { sidebar } from "../lib/store";
   export let post;
 </script>
 
@@ -22,19 +23,31 @@
 </div>
 <hr />
 <div>
-  <a href="#project:{post.data.project.slug}" class="text-decoration-none">
+  <a
+    role="button"
+    on:click={() => sidebar.set("project:" + post.data.project.slug)}
+    class="text-decoration-none"
+  >
     <span class="text-white glowing-text"
       >-&gt; Project Details &amp; History</span
     ></a
   >
 </div>
 <div class="mt-1">
-  <a href="#projects" class="text-decoration-none">
+  <a
+    role="button"
+    on:click={() => sidebar.set("projects")}
+    class="text-decoration-none"
+  >
     <span class="text-white glowing-text">-&gt; All Projects</span>
   </a>
 </div>
 <div class="mt-1">
-  <a href="#posts" class="text-decoration-none">
+  <a
+    role="button"
+    on:click={() => sidebar.set("posts")}
+    class="text-decoration-none"
+  >
     <span class="text-white glowing-text">-&gt; All Posts</span>
   </a>
 </div>

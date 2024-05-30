@@ -5,6 +5,7 @@
 
   // English.
   import en from "javascript-time-ago/locale/en";
+  import Back from "./Back.svelte";
 
   TimeAgo.addDefaultLocale(en);
   const timeAgo = new TimeAgo("en-US");
@@ -15,7 +16,7 @@
     <span class=""> ///__________<sup>*</sup></span>
   </div>
 </div>
-<a href="#" class="text-decoration-none glowing-text text-white">&lt;- Back</a>
+<Back />
 <hr />
 
 <span><h3>All Posts</h3></span>

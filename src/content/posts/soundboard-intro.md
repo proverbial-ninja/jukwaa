@@ -1,7 +1,7 @@
 ---
 title: ' Step 1 – Experimentation'
 startDate: 2024-05-27T9:30:00+03:00
-description: 'In the lab'
+description: 'Proverbial Sound Board In the lab'
 author: 'Proverbial Ninja'
 project: sound-board
 layout_type: 'Blog'
@@ -20,5 +20,4 @@ This experimentation phase is just the beginning. Once we ensure that MIDI input
 
 Check Out the [#Experiments Branch on github](https://github.com/proverbial-ninja/sound-board/tree/experiments) 
 
-Also keep an eye on [Jukwaa](#project:sound-board) 
 
