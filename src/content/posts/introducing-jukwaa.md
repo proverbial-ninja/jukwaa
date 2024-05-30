@@ -20,9 +20,9 @@ You might be thinking, "Why go through the trouble of building yet another blogg
 
 Jukwaa currently supports three types of posts:
 
-1. [Tiktok](http://localhost:4321/?post=nakupenda-whatnot) – Because who doesn’t want to embed their latest 15-second dance craze?
+1. [Tiktok](?post=nakupenda-whatnot) – Because who doesn’t want to embed their latest 15-second dance craze?
 2. [Blog](#) – For those longer, more thoughtful posts that demand a few extra minutes of your attention. Like what you are reading.
-3. [Micro Post]([#](http://localhost:4321/?post=jukwaa-update-1#posts)) – Quick thoughts, links, and musings that are  too short for a full blog post.
+3. [Micro Post]([#](post=jukwaa-update-1)) – Quick thoughts, links, and musings that are  too short for a full blog post.
 
 
 #### Under the Hood
