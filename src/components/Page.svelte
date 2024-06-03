@@ -53,7 +53,7 @@
         </div>
         <div
           style="height: 77vh; "
-          class="col col-12 border pt-0 pb-0 d-inline-block overflow-y-hidden overflow-x-auto bg-opacity-75"
+          class="col col-12 border p-0 d-inline-block overflow-y-hidden overflow-x-auto bg-opacity-75"
         >
           <Stage {post} {projects} />
         </div>
@@ -82,7 +82,27 @@
           {/if}
         </div>
       </div>
-      <SideBar {posts} {post} {projects} />
+      <div
+        class="offcanvas offcanvas-end show bg-black text-white"
+        tabindex="-1"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        id="offcanvasDark"
+        aria-labelledby="offcanvasDarkLabel"
+      >
+        <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title" id="offcanvasDarkLabel">Offcanvas</h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvasDark"
+            aria-label="Close"
+          ></button> -->
+        </div>
+        <div class="offcanvas-body">
+          <SideBar {posts} {post} {projects} />
+        </div>
+      </div>
     </div>
   </div>
 {:else}

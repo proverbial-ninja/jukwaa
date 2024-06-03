@@ -4,7 +4,7 @@ startDate: 2024-05-20
 description: 'Music: I sampled Patricia Kihoro and Aaron Rimbui and added a verse'
 author: 'Proverbial Kiki'
 project: tiktok-music
-link: https://www.tiktok.com/@proverbialkiki/video/7362945205995130118?is_from_webapp=1&sender_device=pc&web_id=7336098186991928837
+link: https://www.tiktok.com/@proverbialkiki/video/7362945205995130118
 layout_type: 'TikTok'
 tags: ["astro", "blogging"]
 ---

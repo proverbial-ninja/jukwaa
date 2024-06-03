@@ -5,23 +5,21 @@
   export let post;
 </script>
 
-<div class="container">
-  <div class="row">
-    <div class="col col-6">
-      <div class=" align-items-center d-flex align-items-center h-75">
-        <div class="p-5">
-          <span class="display-6 mb-3 text-black bg-white p-2"
-            >{post.data.title}</span
-          >
-          <hr />
-          <p><SvelteMarkdown source={post.body} /></p>
-        </div>
+<div class="row">
+  <div class="col col-6">
+    <div class=" align-items-center d-flex align-items-center h-75">
+      <div class="p-5">
+        <span class="display-6 mb-3 text-black bg-white p-2"
+          >{post.data.title}</span
+        >
+        <hr />
+        <p><SvelteMarkdown source={post.body} /></p>
       </div>
     </div>
+  </div>
 
-    <div class="col col-6 bg-white" style="height: 100vh;">
-      <Oembed url={post.data.link} />
-    </div>
+  <div class="col mr-0" style="height: 100vh;">
+    <Oembed url={post.data.link} />
   </div>
 </div>
 

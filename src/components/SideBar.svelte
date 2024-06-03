@@ -38,7 +38,7 @@
   });
 </script>
 
-<div style="max-width: 350px;" class="col col-3 d-inline-block me-4">
+<div style="max-width: 350px;" class="col d-inline-block me-4">
   {#if !url}
     <SidebarDefault {post} />
     <!-- content here -->
