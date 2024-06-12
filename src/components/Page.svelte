@@ -43,9 +43,9 @@
             >
           </div>
           <div>
-            <span class=" glowing-text">
+            <span class="">
               <a
-                class="text-decoration-none text-white"
+                class="text-decoration-none glowing-text"
                 on:click={() => sidebar.set("project:jukwaa")}>-&gt; About</a
               >
             </span>
@@ -113,7 +113,7 @@
   .jukwaa-yellow-bg {
     background-color: #fff;
   }
-  .glowing-text {
+  /* .glowing-text {
     text-shadow:
       0 0 20px #efe300,
       0 0 30px #fff,
@@ -134,5 +134,5 @@
       0 0 100px #d5dc14,
       0 0 150px #202104,
       0 0 200px #7f8138;
-  }
+  } */
 </style>

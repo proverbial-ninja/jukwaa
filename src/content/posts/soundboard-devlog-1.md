@@ -1,5 +1,5 @@
 ---
-title: ' Step 1 – Experimentation'
+title: ' Devlog 1 - Foundation'
 startDate: 2024-05-27T9:30:00+03:00
 description: 'Proverbial Sound Board In the lab'
 author: 'Proverbial Ninja'
